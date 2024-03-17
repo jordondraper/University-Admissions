@@ -18,7 +18,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="favicon_io-arch/site.webmanifest">
+<link rel="manifest" href="favicon_io_gsu/site.webmanifest">
 
 
 </head>
@@ -26,26 +26,90 @@
     
 <div id="headerWrapper">
     <header>
-        <img src="favicon_io-arch/architecture.logo.png" alt="logo" width="75" height="75">
-        <h1 class="gradient-text">Big Architect Services</h1>
+        <img src="GSU-assets/favicon.png" alt="logo" width="75" height="75" srcset="GSU-assets/logo1x.png 1x, GSU-assets/logo2x.png 2x,GSU-assets/logo3x.png 3x,">
+        <h1>Silly Goose University</h1>
+        <div id="hamburger"><a href="#closex">&#9776;</a></div>
+        <div id="phone"><a href="tel:18001231234">1-800-123-1234</a></div>
     </header>
 </div>
 
 
 <div id="navWrapper">
     <nav>
+        <div id="closex"><a href="#hamburger">x</a></div>
        <ul>
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Academics</a></li>
+        <li class="active"><a href="#">Admissions</a></li>
+        <li><a href="#">Faculty</a></li>
+        <li><a href="#">Contact Us</a></li>
        </ul>
     </nav>
 </div>
 
 <div id="mainWrapper">
 <main>
-    <h1>Inventory</h1>
+    <h1>Apply Today!</h1>
+    <p>Silly Goose University offers an unparalleled educational experience that transcends the ordinary and embraces the extraordinary. Nestled in a whimsical setting, Silly Goose University prides itself on fostering a culture of creativity, innovation, and boundless curiosity. Here are compelling reasons why individuals should consider applying to attend this unique institution. Silly Goose University boasts a faculty of renowned scholars and industry experts who are dedicated to nurturing not only academic excellence but also individuality and self-expression. Students have the opportunity to engage in dynamic discussions, collaborate on groundbreaking research, and explore their passions in an environment that celebrates diversity and unconventional thinking.</p>
+
+    <form method="get" action="thanks.html" class="myForm" autocomplete="on">
+        <h3>Personal Information</h3>
+
+        <label>First Name: <input type="text" name="fname" autocomplete="given-name" required title="First Name Here"></label>
+        
+        <label>Last Name: <input type="text" name="lname" autocomplete="family-name" required title="Last Name Here"></label>
+        
+        <label>Email: <input type="email" name="email" autocomplete="email" required title="Your Email Here"></label>
+
+        <label>Phone Number: <input type="tel" name="phone" autocomplete="tel" required title="Your Phone Number Here"></label>
+
+        <label>Address: <input type="text" name="streetaddress" autocomplete="street-address"  title="Your Address Here"></label>
+
+        <label>City: <input type="text" name="city" autocomplete="address-level2"  title="What's your city?"></label>
+
+        <label>Zip Code: <input type="text" name="zip" autocomplete="postal-code"  title="Give me your Zip"></label>
+
+    <h3>Preferred Form of Communication</h3>
+    <label><input type="radio" name="communication" value="phone">Phone</label>
+    <label><input type="radio" name="communication" value="email">Email</label>
     
+
+        <h3>Previous Education</h3>
+
+        <label>High School Graduation Date: <input type="date" name="date"></label>
+
+        <h4>Education Completed</h4>
+        <label><input type="checkbox" name="diploma">High School Diploma</label>
+        <label><input type="checkbox" name="associate">Associates Degree</label>
+        <label><input type="checkbox" name="bachelor">Bachelors Degree</label>
+        <label><input type="checkbox" name="masters">Masters Degree</label>
+        <label><input type="checkbox" name="doctorate">Doctorate Degree</label>
+
+        <label>
+            Previous School:
+
+            <select name="condition">
+                <option value="No Selection Made">Please Select</option>
+                <option value="Goofy Goober University">Goofy Goober University</option>
+                <option value="Goofy Goober University">Goofy Goober University</option>
+                <option value="Goofball Tech">Goofball Tech</option>
+                <option value="Silly Goose State University">Silly Goose State University</option>
+            </select>
+        </label>
+
+        <h3>Username & Password</h3>
+
+        <label>Username (5-10 letters or numbers)<input type="text" name="username" required pattern="[A-Za-z0-10]{5,10}" title="Don't Mess this up. 5-10 letters and numbers"></label>
+
+        <label>Password (6 or more)<input type="password" minlength="6" title="Don't put 123456 or password. Put something else :)" required></label>
+
+        
+
+
+
+        <input type="submit" value="Send My Application!">
+    </form>
+
 </main>
 </div>
 
